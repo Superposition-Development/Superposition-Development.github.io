@@ -1,0 +1,35 @@
+#navbar
+{
+    position:absolute;
+    padding:5px;
+    left:0;
+    top:0;
+    width:100%;
+    height:56px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+}
+
+html
+{
+    margin-top: 56px;
+}
+
+.navbarSection
+{
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+
+#navbarLogo
+{
+    height:80%;
+}
+
+.navbarText
+{
+    color:white;
+}
