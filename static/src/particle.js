@@ -65,7 +65,7 @@ function drawParticles() {
 }
 
 image.crossOrigin = "anonymous";
-image.src = "static/img/darkbloom.png"
+image.src = "static/img/logo/darkbloom.png"
 document.addEventListener("DOMContentLoaded", (e) => {
     image.onload = function () {
         resetBoard()

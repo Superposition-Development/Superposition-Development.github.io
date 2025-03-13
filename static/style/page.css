@@ -2,5 +2,12 @@ html,body
 {
     height:100%;
     width:calc(100% - 8px);
-    background-color: #010101;
+    background-color: #1b1b1b;
+    color:white;
+    font-family: "Manrope", sans-serif;
+}
+
+h1
+{
+    font-family: "DM Sans", sans-serif;
 }

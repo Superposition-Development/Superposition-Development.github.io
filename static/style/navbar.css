@@ -1,16 +1,36 @@
 #navbar
 {
-    position:absolute;
+    position:fixed;
     padding:5px;
     left:0;
     top:0;
     width:100%;
     height:56px;
-    background-color: black;
+    background-color: rgba(0,0,0,0.8);
     display: flex;
     align-items: center;
     font-family: "Manrope", sans-serif;
+    z-index: 2;
+    animation: pulseShadow 10s infinite ease-in-out;
+    justify-content: space-between;
 }
+
+@keyframes pulseShadow {
+    0% {
+        box-shadow: 0px 37px 38px -29px rgba(255, 233, 147, 0.75);
+        -webkit-box-shadow: 0px 37px 38px -29px rgba(255, 233, 147, 0.75);
+    }
+    50% {
+        box-shadow: 0px 42px 45px -25px rgba(255, 233, 147, 1);
+        -webkit-box-shadow: 0px 42px 45px -25px rgba(255, 233, 147, 1);
+    }
+    100% {
+        box-shadow: 0px 37px 38px -29px rgba(255, 233, 147, 0.75);
+        -webkit-box-shadow: 0px 37px 38px -29px rgba(255, 233, 147, 0.75);
+    }
+}
+
+
 
 html
 {
@@ -22,6 +42,15 @@ html
     height:100%;
     display: flex;
     align-items: center;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+.dropdownSection
+{
+    text-decoration: none;
+    padding-right: 20px;
+    color: white;
 }
 
 #navbarLogo

@@ -20,3 +20,15 @@
     background-size: 3vmin;
     animation: moveBackground 100s linear infinite;
 }
+
+#pageContent span, #pageContent p
+{
+    color:white;
+    font-family: "Manrope", sans-serif;
+}
+
+#pageContent h1
+{
+    color:white;
+    font-family: "DM Sans", sans-serif;
+}
