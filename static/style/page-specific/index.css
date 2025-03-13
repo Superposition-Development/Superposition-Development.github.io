@@ -1,6 +1,22 @@
-#particleCanvas
-{
-    position:absolute;
-    left:0;
-    top:66px;
+@keyframes moveBackground {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+#particleCanvasWrapper {
+    position: absolute;
+    left: 0;
+    top: 66px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #030303; /* Adjust as needed */
+    background-image: 
+        url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='white' fill-opacity='0.5'%3E%3Crect x='45' y='20' width='10' height='60'/%3E%3Crect x='20' y='45' width='60' height='10'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 3vmin;
+    animation: moveBackground 100s linear infinite;
 }
