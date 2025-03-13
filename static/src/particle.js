@@ -4,6 +4,7 @@ const particleDiameter = 4;
 const repelRadius = 40
 const repelSpeed = 5
 const returnSpeed = 0.1
+let hasDrawnImage = false
 
 //image aspect ratio: 1:1, if this changes if we get nameless logo / aspect ratio changes multipy by this
 let docWidth = this.document.body.getBoundingClientRect().width / 2
@@ -17,6 +18,7 @@ let mouseX = Infinity
 let mouseY = Infinity
 
 function resetBoard() {
+    hasDrawnImage = true
     pCtx.clearRect(0,0,docWidth,docWidth)
     particles = []
     docWidth = this.document.body.getBoundingClientRect().width / 2
@@ -76,6 +78,14 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 window.addEventListener("resize", function (e) {
     resetBoard()
+})
+
+window.addEventListener("scroll",function(e)
+{
+    if(!hasDrawnImage)
+    {
+        resetBoard()
+    }
 })
 
 particleCanvasDOM.addEventListener("mousemove", function (e) {
