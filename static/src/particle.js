@@ -1,6 +1,6 @@
 let particleCanvasDOM = document.getElementById("particleCanvas")
 let pCtx = particleCanvasDOM.getContext("2d", { willReadFrequently: true })
-const particleDiameter = 4;
+const particleDiameter = 9;
 const repelRadius = 40
 const repelSpeed = 5
 const returnSpeed = 0.1
