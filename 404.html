@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Superposition Development</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!--CSS-->
+    <!--"dependencies"-->
+    <link rel="stylesheet" href="static/style/font.css">
+    <link rel="stylesheet" href="static/style/page.css">
+    <link rel="stylesheet" href="static/style/navbar.css">
+
+    <!--page specific-->
+    <!--mfw style tag-->
+    <style>
+        @keyframes moveBackground {
+            from {
+                background-position: 0% 100%;
+            }
+
+            to {
+                background-position: 0% 0%;
+            }
+        }
+
+        @keyframes moveBackgroundBackward {
+            from {
+                background-position: 0% 0%;
+            }
+
+            to {
+                background-position: 0% 100%;
+            }
+        }
+
+        #static404 {
+            background-image: url("https://raw.githubusercontent.com/Superposition-Development/Superposition-Development.github.io/refs/heads/main/tvnoise.jpg");
+            position: absolute;
+            left: 0;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            opacity: 0.4;
+            animation: moveBackgroundBackward 5s linear infinite both;
+        }
+
+
+        #wrap404 {
+            position: fixed;
+            left: 0;
+            top: 64px;
+            display: flex;
+            justify-content: center;
+            background-color: #030303;
+            /* Adjust as needed */
+            background-image:
+                url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='white' fill-opacity='0.5'%3E%3Crect x='45' y='20' width='10' height='60'/%3E%3Crect x='20' y='45' width='60' height='10'/%3E%3C/g%3E%3C/svg%3E");
+            background-size: 3vmin;
+            animation: moveBackground 2s linear infinite;
+        }
+
+
+
+        @keyframes squiggly-anim {
+            0% {
+                filter: url("#squiggly-0");
+            }
+
+            25% {
+                filter: url("#squiggly-1");
+            }
+
+            50% {
+                filter: url("#squiggly-2");
+            }
+
+            75% {
+                filter: url("#squiggly-3");
+            }
+
+            100% {
+                filter: url("#squiggly-4");
+                background-position: 200%;
+            }
+        }
+
+        @keyframes shift {
+            0% {
+                transform: translateX(10%) translateY(10%);
+            }
+
+            100% {
+                transform: translateX(-10%) translateY(-10%);
+            }
+        }
+
+
+        #picture404 {
+            width: 50%;
+            animation: squiggly-anim infinite .1s;
+        }
+
+        #message404 {
+            position: absolute;
+            left: calc(50%-100px);
+            z-index: 5;
+            top: 32px;
+            font-size: 100px;
+            background: linear-gradient(to right, rgb(0, 0, 0) 20%, #d6d6d6 30%, #8e8e8e 70%, rgb(215, 215, 215) 80%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: squiggly-anim infinite .3s;
+        }
+
+        @keyframes textShine {
+            to {
+                background-position: 200%;
+            }
+        }
+    </style>
+    <!--End CSS-->
+    <meta property="og:site_name" content="The Superposition Development Team">
+    <meta property="og:title" content="Superposition Development">
+    <meta name="description" content="Devlogs, releases, updates and more from the Superposition Development team."" />
+        <meta property=" og:url" content="https://superposition-development.github.io/">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/Superposition-Development/Superposition-Development.github.io/29620154d0b55d10c67b9c946d5d7dcb226d1123/static/img/logo/sp-logo-new-dark-mono.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+
+    <script src="inside.txt"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="/" class="navbarSection" style="margin-left:7px;gap:10px">
+            <img src="static/img/logo/new.png" id="navbarLogo"><span class="navbarText">Superposition Development</span>
+        </a>
+        <a class="dropdownSection" href="pages/devlog.html">Devlog</a>
+    </nav>
+    <div id="wrap404">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none">
+            <defs>
+                <filter id="squiggly-a">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0">
+                    </feTurbulence>
+                    <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6"></feDisplacementMap>
+                </filter>
+
+                <filter id="squiggly-z">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1">
+                    </feTurbulence>
+                    <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="8"></feDisplacementMap>
+                </filter>
+
+                <filter id="squiggly-0">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0">
+                    </feTurbulence>
+                    <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6"></feDisplacementMap>
+                </filter>
+
+                <filter id="squiggly-1">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1">
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="8"></feDisplacementMap>
+                </filter>
+
+                <filter id="squiggly-1a">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1">
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="18"></feDisplacementMap>
+                </filter>
+
+                <filter id="squiggly-2">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2">
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="6"></feDisplacementMap>
+                </filter>
+
+                <filter id="squiggly-3">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3">
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="8"></feDisplacementMap>
+                </filter>
+
+                <filter id="squiggly-3a">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3">
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="18"></feDisplacementMap>
+                </filter>
+
+                <filter id="squiggly-4">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4">
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="6"></feDisplacementMap>
+                </filter>
+            </defs>
+        </svg>
+        <span id="message404">404</span>
+        <div id="static404"></div>
+        <img id="picture404"
+            src="https://raw.githubusercontent.com/Superposition-Development/Superposition-Development.github.io/refs/heads/main/static/img/logo/sp-logo-new-dark-mono.png">
+    </div>
+</body>
+
+</html>

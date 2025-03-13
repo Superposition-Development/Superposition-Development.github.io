@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../static/style/navbar.css">
 
     <!--page specific-->
+    <link rel="stylesheet" href="../static/style/page-specific/devlog.css">
     <!--End CSS-->
 </head>
 
@@ -25,7 +26,12 @@
         <a class="dropdownSection" href="devlog.html">Devlog</a>
     </nav>
     <h1>dev log</h1>
-    <!--it's 3am rn i will add this later remind me its just my portfolio website project embed art thing-->
+    <div id="ProjectsContainer" class="slideable" data-slideanim="slideLeft">
+        <div class="ProjectCard" onclick="cardZoom(this)" data-cardURL="pages/CreeperPunch.html">
+          <img src="../static/img/logo/sp-logo-new-dark-mono.png" class="ProjectImage">
+          <p>write something im lazy</p>
+        </div>
+      </div>
 </body>
 
 </html>
