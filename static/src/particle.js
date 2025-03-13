@@ -68,7 +68,6 @@ image.crossOrigin = "anonymous";
 image.src = "static/img/darkbloom.png"
 document.addEventListener("DOMContentLoaded", (e) => {
     image.onload = function () {
-        pCtx.drawImage(image, 0, 0, docWidth, docWidth)
         resetBoard()
     }
 });
