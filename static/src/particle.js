@@ -17,6 +17,8 @@ let mouseX = Infinity
 let mouseY = Infinity
 
 function resetBoard() {
+    pCtx.clearRect(0,0,docWidth,docWidth)
+    particles = []
     docWidth = this.document.body.getBoundingClientRect().width / 2
     particleCanvasDOM.width = docWidth;
     particleCanvasDOM.height = docWidth;
@@ -37,7 +39,6 @@ function resetBoard() {
             })
         }
     }
-    drawParticles()
 }
 
 function drawParticles() {
@@ -63,6 +64,7 @@ function drawParticles() {
     })
     requestAnimationFrame(drawParticles)
 }
+drawParticles()
 
 image.crossOrigin = "anonymous";
 image.src = "static/img/logo/darkbloom.png"
