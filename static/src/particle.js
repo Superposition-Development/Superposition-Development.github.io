@@ -1,7 +1,7 @@
 let particleCanvasDOM = document.getElementById("particleCanvas")
 let pCtx = particleCanvasDOM.getContext("2d", { willReadFrequently: true })
 const particleDiameter = 9;
-const repelRadius = 40
+let repelRadius = 40
 const repelSpeed = 5
 const returnSpeed = 0.1
 let hasDrawnImage = false
@@ -97,4 +97,14 @@ particleCanvasDOM.addEventListener("mouseleave",function(e)
 {
     mouseX = Infinity
     mouseY = Infinity
+})
+
+particleCanvasDOM.addEventListener("mousedown",function(e)
+{
+    repelRadius = 70;
+})
+
+particleCanvasDOM.addEventListener("mouseup",function(e)
+{
+    repelRadius = 40;
 })
