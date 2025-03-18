@@ -55,7 +55,7 @@ function drawParticles() {
         }
         else if (particle.x != particle.ogX || particle.y != particle.ogY) {
             theta = Math.atan2(particle.ogY - particle.y, particle.ogX - particle.x)
-            distance = Math.hypot(particle.ogX - particle.x, particle.ogY - particle.y)+Math.floor(Math.random() * 0.1)
+            distance = Math.hypot(particle.ogX - particle.x, particle.ogY - particle.y)+Math.random()
             particle.x += Math.cos(theta) * distance * returnSpeed
             particle.y += Math.sin(theta) * distance * returnSpeed
         }
