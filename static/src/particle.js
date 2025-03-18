@@ -49,7 +49,7 @@ function drawParticles() {
         let distanceFromMouse = Math.hypot(mouseX - particle.x, mouseY - particle.y)
         if (distanceFromMouse < repelRadius) {
             theta = Math.atan2(mouseY - particle.y, mouseX - particle.x)
-            force = (((repelRadius++Math.floor(Math.random() * 30)) - distanceFromMouse) / repelRadius)+Math.floor(Math.random() * 30)
+            force = (((repelRadius+Math.floor(Math.random() * 30)) - distanceFromMouse) / repelRadius)+Math.floor(Math.random() * 30)
             particle.x -= Math.cos(theta) * force * repelSpeed
             particle.y -= Math.sin(theta) * force * repelSpeed
         }
