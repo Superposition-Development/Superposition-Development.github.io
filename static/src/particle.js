@@ -49,13 +49,13 @@ function drawParticles() {
         let distanceFromMouse = Math.hypot(mouseX - particle.x, mouseY - particle.y)
         if (distanceFromMouse < repelRadius) {
             theta = Math.atan2(mouseY - particle.y, mouseX - particle.x)
-            force = ((repelRadius - distanceFromMouse) / repelRadius)+Math.floor(Math.random() * 30)
+            force = (((repelRadius++Math.floor(Math.random() * 30)) - distanceFromMouse) / repelRadius)+Math.floor(Math.random() * 30)
             particle.x -= Math.cos(theta) * force * repelSpeed
             particle.y -= Math.sin(theta) * force * repelSpeed
         }
         else if (particle.x != particle.ogX || particle.y != particle.ogY) {
             theta = Math.atan2(particle.ogY - particle.y, particle.ogX - particle.x)
-            distance = Math.hypot(particle.ogX - particle.x, particle.ogY - particle.y)
+            distance = Math.hypot(particle.ogX - particle.x, particle.ogY - particle.y)++Math.floor(Math.random() * 0.1)
             particle.x += Math.cos(theta) * distance * returnSpeed
             particle.y += Math.sin(theta) * distance * returnSpeed
         }
