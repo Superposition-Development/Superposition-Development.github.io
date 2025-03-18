@@ -101,6 +101,7 @@ particleCanvasDOM.addEventListener("mouseleave",function(e)
 
 particleCanvasDOM.addEventListener("mousedown",function(e)
 {
+    e.preventDefault()
     if(e.button == 0)
     {
         repelRadius = 70;
