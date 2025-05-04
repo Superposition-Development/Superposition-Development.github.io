@@ -2,8 +2,13 @@
 /*@import url("/static/fonts/texgyreadventor-regular.otf");*/
 
 @font-face {
-	font-family: "TexGyre";
+	font-family: "TexGyre Regular";
 	src: url("/static/fonts/texgyreadventor-regular.otf");
+}
+
+@font-face {
+	font-family: "TexGyre Bold";
+	src: url("/static/fonts/texgyreadventor-bold.otf");
 }
 
 /*

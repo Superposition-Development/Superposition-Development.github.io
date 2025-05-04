@@ -1,18 +1,24 @@
 #navbar
 {
     position:fixed;
-    padding:5px;
-    left:0;
-    top:0;
+    padding:0px 0px 0px 0px;
+	left: 0;
+	top: 0;
     width:100%;
     height:56px;
-    background-color: rgba(0,0,0,0.8);
-	backdrop-filter: blur(20px);
+    background-color: var(--color-base-translucent);
+	backdrop-filter: blur(7px);
     display: flex;
     align-items: center;
-    z-index: 2;
+    z-index: 999;
     /*animation: pulseShadow 10s infinite ease-in-out;*/
-    justify-content: space-between;
+    justify-content: center;
+	
+}
+
+#navbar a {
+	margin: 30px;
+	color: var(--color-text);
 }
 
 /*@keyframes pulseShadow {
@@ -32,10 +38,10 @@
 
 
 
-html
+/*html
 {
     margin-top: 56px;
-}
+}*/
 
 .navbarSection
 {

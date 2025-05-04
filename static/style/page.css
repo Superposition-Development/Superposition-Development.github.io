@@ -1,13 +1,65 @@
+:root {
+	--color-base: #0e0d11;
+	--color-base-translucent: #0e0d11cc;
+	--color-base-lv1: #0f0f11;
+	--color-base-lv2: #131314;
+
+	--color-surface-0: #ccd0da;
+	--color-surface-1: #bcc0cc;
+	--color-surface-2: #acb0be;
+
+	--color-text: #efefff;
+
+	--accent-base: #05030c;
+	--accent-vibrant: #fd5757;
+	--accent-vibrant-lv1: #b93f3f;
+}
+
 html,body
 {
     height:100%;
-    width:calc(100% - 8px);
-    background-color: #1b1b1b;
-    color:white;
-    font-family: "TexGyre", sans-serif;
+    width:100%;
+	margin: 0;
+	color: var(--color-text);
+    font-family: "TexGyre Regular", sans-serif;
 }
 
 h1
 {
-    font-family: "TexGyre", sans-serif;
+    font-family: "TexGyre Bold", sans-serif;
+}
+
+p {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+
+
+a {
+	color: var(--accent-vibrant);
+	text-decoration: none;
+}
+
+.panel{
+	display: flex;
+	background-color: var(--color-base-lv1);
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+}
+
+.content{
+	height: 100%;
+	padding: 50px;
+	background-color: var(--color-base);
+}
+
+footer {
+	display: flex;
+	height: 100px;
+	background-color: var(--accent-base);
+
+	align-items: center;
+	justify-content: center;
 }

@@ -1,0 +1,1 @@
+document.getElementsByTagName("footer")[0].innerText = "Copyright: Superposition Development " + new Date().getFullYear();
