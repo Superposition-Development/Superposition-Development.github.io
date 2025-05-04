@@ -10,7 +10,6 @@
 	backdrop-filter: blur(20px);
     display: flex;
     align-items: center;
-    font-family: "texgyreadventor-regular", sans-serif;
     z-index: 2;
     /*animation: pulseShadow 10s infinite ease-in-out;*/
     justify-content: space-between;
