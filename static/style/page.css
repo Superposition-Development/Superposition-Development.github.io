@@ -4,10 +4,10 @@ html,body
     width:calc(100% - 8px);
     background-color: #1b1b1b;
     color:white;
-    font-family: "Manrope", sans-serif;
+    font-family: "TexGyre", sans-serif;
 }
 
 h1
 {
-    font-family: "DM Sans", sans-serif;
+    font-family: "TexGyre", sans-serif;
 }

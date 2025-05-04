@@ -7,15 +7,16 @@
     width:100%;
     height:56px;
     background-color: rgba(0,0,0,0.8);
+	backdrop-filter: blur(20px);
     display: flex;
     align-items: center;
-    font-family: "Manrope", sans-serif;
+    font-family: "texgyreadventor-regular", sans-serif;
     z-index: 2;
-    animation: pulseShadow 10s infinite ease-in-out;
+    /*animation: pulseShadow 10s infinite ease-in-out;*/
     justify-content: space-between;
 }
 
-@keyframes pulseShadow {
+/*@keyframes pulseShadow {
     0% {
         box-shadow: 0px 37px 38px -29px rgba(255, 233, 147, 0.75);
         -webkit-box-shadow: 0px 37px 38px -29px rgba(255, 233, 147, 0.75);
@@ -28,7 +29,7 @@
         box-shadow: 0px 37px 38px -29px rgba(255, 233, 147, 0.75);
         -webkit-box-shadow: 0px 37px 38px -29px rgba(255, 233, 147, 0.75);
     }
-}
+}*/
 
 
 
