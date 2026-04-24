@@ -1,0 +1,10 @@
+/* Top-level CSS definitions for the Superposition Development website,
+   every page should have this, as it provides definitions for fonts and
+   variables for consistency with the rest of the website. Import order
+   doesn't matter, but main.css should be the first stylesheet link done
+   for organisational purposes. */
+
+/* CONSIDER MAKING FONT ALTERNATES */
+
+/* Sono */
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght,MONO@200..800,1&display=swap");

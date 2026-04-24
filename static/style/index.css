@@ -1,0 +1,98 @@
+/* Stylesheet for index.html */
+
+@keyframes unblur-bg {
+    from {
+	backdrop-filter: blur(20px);
+    }
+
+    to {
+	backdrop-filter: blur(3px);
+    }
+}
+
+@keyframes unblur-fg {
+    from {
+	filter: blur(10px);
+    }
+
+    to {
+	filter: blur(0px);
+    }
+}
+
+@keyframes blur-out {
+    from {
+	backdrop-filter: blur(3px) brightness(1);
+	filter: brightness(1);
+    }
+
+    to {
+	backdrop-filter: blur(3px) brightness(0);
+	filter: brightness(0);
+    }
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../img/website_empty_bg_crop.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    animation-name: unblur-bg, unblur-fg;
+    animation-fill-mode: forwards, forwards;
+    animation-duration: 1s, 0.5s;
+}
+
+body.blur-out {
+    animation: blur-out 1s forwards;
+}
+
+.index_menu {
+    margin-top: 25px; /* Separate from SP DEV logotype */
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.index_menu button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    border: none;
+
+    height: 15pt; /* When we hover the font size is set to 14, this ensures that
+		     elements are not repositioned (jitter) */
+
+    font-family: "Sono";
+    font-size: 13pt;
+    cursor: pointer;
+
+    transition-property: font-size;
+    transition-duration: 0.2s;
+}
+
+.index_menu button:hover {
+    font-size: 14pt;
+}
+
+.index_menu hr {
+    margin: 0px;
+    width: 100%;
+    border: none;
+}

@@ -1,0 +1,74 @@
+* {
+    font-family: "Sono";
+    animation: blur-in 1s forwards;
+}
+
+@keyframes blur-in {
+    from {
+	filter: brightness(0);
+    }
+
+    to {
+	filter: brightness(1);
+    }
+}
+
+body {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 10px;
+
+    height: 100%;
+
+    margin: 10px;
+    overflow: none;
+    color: #ffffff;
+    background-color: #151515;
+
+}
+
+.person_card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 5px;
+    border: 3px solid #1b1b1b;
+}
+
+.person_card_header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.person_card_header_name {
+    font-size: 16pt;
+    font-style: italic;
+    padding: 0px;
+}
+
+.person_card_header_alias {
+    display: flex;
+    align-items: end;
+
+    font-style: italic;
+    font-weight: bold;
+    font-size: 10pt;
+    padding-left: 0.1em; /* So it looks better
+			    with the big name
+			    on top, dunno if
+			    there's a better
+			    way to do it. */
+}
+
+.person_card_description {
+    padding: 3px;
+}
+
+.footer_text {
+    position: absolute;
+    background-color: black;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>People at Superposition Development</title>
+    <link rel="icon" href="./../favicon.ico" type="image/x-icon">
+
+    <!-- I don't know what to put here for Open Graph -->
+  </head>
+
+  <body>
+    <p>Felipe-Sena (Felipehellomods)</p>
+    <p>I'm one of the founders of Superposition Development and do work in several areas, including:</p>
+    <p>Programming</p>
+    <p>Design</p>
+    <p>Music</p>
+    <p>3D art</p>
+
+    <p>Currently working on Spectator, [OnServerDuty] and a few other projects, a lot of stuff I do</p>
+    <p>(including for unreleased projects for Superposition) is free and open source, check it out here:</p>
+    <p>Codeberg: LINK</p>
+    <p>Github: LINK</p>
+  </body>
+</html>
